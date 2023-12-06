@@ -70,9 +70,31 @@ void aufgabe_1()
 
 void aufgabe_2()
 {
+	float a,b,c; 
+	cout << "Geben sie a , b und c zur Brechnung der ABC Formel an.";
+	if (cin >> a >> b >> c)
+	{
+		if (((b * b) - 4 * a * c) > 0)
+		{
+			cout << "Ergbniss 1 = " << (-b + sqrt((b * b) - 4 * a * c) / 2 * a);
+			cout << "Ergbniss 2 = " << (b + sqrt((b * b) - 4 * a * c) / 2 * a);
+		}
+		else
+		{
+			float zwerg;
+			float zwergre; 
+
+			zwerg = (b * b) - 4 * a * c;
+			zwergre = -b / 2 * a; 
+
+			cout << "Die erste Loesung ist " << zwergre << + zwerg <<"j" << endl;
+			cout << "Die zweite Loesung ist " << zwergre << - zwerg << "j" << endl;
 	
+		}
 
 
+	}
+	else cout << "Falsche Eingabe";
 
 
 }

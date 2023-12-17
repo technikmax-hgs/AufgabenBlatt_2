@@ -7,13 +7,17 @@ using namespace std;
 
 void aufgabe_1();
 void aufgabe_2();
+void aufgabe_3();
+void aufgabe_4();
 
 
 
 int main()
 {
 	//aufgabe_1();
-	aufgabe_2();
+	//aufgabe_2();
+	//aufgabe_3();
+	aufgabe_4();
 }
 
 void aufgabe_1()
@@ -76,8 +80,10 @@ void aufgabe_2()
 	{
 		if (((b * b) - 4 * a * c) > 0)
 		{
-			cout << "Ergbniss 1 = " << (-b + sqrt((b * b) - 4 * a * c) / 2 * a);
-			cout << "Ergbniss 2 = " << (b + sqrt((b * b) - 4 * a * c) / 2 * a);
+			float zwergbabcp = -b + sqrt((b * b) - 4 * a * c);
+			float zwergbabcn = -b - sqrt((b * b) - 4 * a * c);
+			cout << "Ergbniss 1 = " << (zwergbabcn / 2 * a);
+			cout << "  Ergbniss 2 = " << (zwergbabcp/ 2 * a);
 		}
 		else
 		{
@@ -98,3 +104,48 @@ void aufgabe_2()
 
 
 }
+
+void aufgabe_3()
+{
+	cout << "Geben sie die beiden Zahlen ein welche sie verechenen wollen: " << endl; 
+	float wert_a;
+	float wert_b;
+	char rechen_operatoren;
+
+	if (cin >> wert_a)
+	{
+		if (cin >> wert_b)
+		{
+			cout << "Geben Sie einen rechen Operator ein mit welchem Sie Ihre Werte A und B verrechnen wollen";
+			if (cin >> rechen_operatoren)
+				switch (rechen_operatoren)
+				{
+				case '+': {cout << " Ist das Ergebniss von a + b = " << wert_a + wert_b << endl; } break;
+				case '-': {cout << " Ist das Ergebniss von a + b = " << wert_a + wert_b << endl; } break;
+				case '*': {cout << " Ist das Ergebniss von a + b = " << wert_a + wert_b << endl; } break;
+				case '/': {cout << " Ist das Ergebniss von a + b = " << wert_a + wert_b << endl; } break;
+
+				}
+			else cout << "Flasche Eingabe";
+
+
+
+
+		}
+		else cout << "Flasche Eingabe";
+
+	}
+	else cout << "Flasche Eingabe";
+}
+
+void aufgabe_4()
+{
+	int primzahl; 
+	cout << " Geben sie eine Zahl ein die überprüft werden soll ob es ein Primzahl ist  ";
+	if (cin >> primzahl)
+	{
+
+}
+
+}
+
